@@ -1,0 +1,106 @@
+[
+    {
+      "model": "schema.organization",
+      "pk": 1,
+      "fields": {
+        "name": "Tech Innovators Inc",
+        "description": "Leading tech solutions provider",
+        "address": "123 Tech Valley, Silicon City",
+        "contact_email": "info@techinnovators.com",
+        "contact_phone": "+1-555-1234",
+        "created_at": "2025-02-18T08:00:00Z",
+        "updated_at": "2025-02-18T08:00:00Z",
+        "updated_at": "2025-02-18T08:00:00Z"
+      }
+    },
+    {
+      "model": "schema.organization",
+      "pk": 2,
+      "fields": {
+        "name": "Green Energy Corp",
+        "description": "Sustainable energy solutions",
+        "address": "456 Eco Road, Green City",
+        "contact_email": "contact@greenenergy.com",
+        "contact_phone": "+1-555-5678",
+        "created_at": "2025-02-18T08:00:00Z",
+        "updated_at": "2025-02-18T08:00:00Z",
+        "updated_at": "2025-02-18T08:00:00Z"
+      }
+    },
+    {
+      "model": "schema.employee",
+      "pk": 1,
+      "fields": {
+        "first_name": "John",
+        "last_name": "Doe",
+        "email": "john.doe@techinnovators.com",
+        "phone": "+1-555-1001",
+        "employee_type": "FULL_TIME",
+        "organization": 1,
+        "joining_date": "2024-01-15",
+        "is_active": true,
+        "created_at": "2025-02-18T08:00:00Z",
+        "updated_at": "2025-02-18T08:00:00Z"
+      }
+    },
+    
+    {
+      "model": "schema.employee",
+      "pk": 6,
+      "fields": {
+        "first_name": "Sarah",
+        "last_name": "Wilson",
+        "email": "sarah@greenenergy.com",
+        "phone": "+1-555-2001",
+        "employee_type": "INTERN",
+        "organization": 2,
+        "joining_date": "2024-06-01",
+        "is_active": true,
+        "created_at": "2025-02-18T08:00:00Z",
+        "updated_at": "2025-02-18T08:00:00Z"
+      }
+    },
+ 
+    {
+      "model": "schema.assignment",
+      "pk": 1,
+      "fields": {
+        "title": "Cloud Migration Project",
+        "description": "Migrate legacy systems to cloud infrastructure",
+        "organization": 1,
+        "assigned_to": [1, 2, 3],
+        "start_date": "2025-03-01T09:00:00Z",
+        "end_date": "2025-06-30T18:00:00Z",
+        "status": "PENDING",
+        "created_at": "2025-02-18T08:00:00Z",
+        "updated_at": "2025-02-18T08:00:00Z"
+      }
+    },
+    {
+      "model": "schema.assignment",
+      "pk": 2,
+      "fields": {
+        "title": "UI/UX Overhaul",
+        "description": "Redesign customer-facing interfaces",
+        "organization": 1,
+        "assigned_to": [2, 4],
+        "start_date": "2025-02-20T09:00:00Z",
+        "end_date": "2025-03-15T18:00:00Z",
+        "status": "IN_PROGRESS"
+      }
+    },
+  
+    {
+      "model": "schema.assignmentevaluation",
+      "pk": 1,
+      "fields": {
+        "assignment": 1,
+        "evaluator": 1,
+        "score": 85,
+        "feedback": "Excellent progress on initial phase",
+        "evaluation_date": "2025-04-01T14:30:00Z",
+        "created_at": "2025-02-18T08:00:00Z",
+        "updated_at": "2025-02-18T08:00:00Z"
+      }
+    }
+  ]
